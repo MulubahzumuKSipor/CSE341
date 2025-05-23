@@ -32,18 +32,10 @@ const getUserById = async (req, res) => {
     });
 };
 
-{
-  "firstName": "Jenny",
-"lastName": "Cooper",
-"email": "jencoop@gmail.com"
-"favoriteColor": "red"
-"birthday": "09-12-2010"
-}
-
 const createUser = async (req, res) => {
   const user = {
     firstName: req.body.firstName,
-    lastName: req.body.lastName.
+    lastName: req.body.lastName,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,
@@ -64,7 +56,7 @@ const updateUser = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const user = {
     firstName: req.body.firstName,
-    lastName: req.body.lastName.
+    lastName: req.body.lastName,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,
