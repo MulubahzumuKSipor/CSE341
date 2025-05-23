@@ -1,0 +1,29 @@
+### Get all contacts
+GET http://localhost:3000/user
+
+### Get a contact by ID
+GET http://localhost:3000/user/682b4e3bcc969ce1f09a1f62
+
+### Create a new contact
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "name": "John Cooper",
+  "email": "joncoop@gmail.com",
+  "address": "123 Main St, Springfield, USA",
+  "contact": "123-456-7890"
+}
+
+### Update a contact by ID
+PUT http://localhost:3000/user/682f3ee94b29160ce4eb0369
+Content-Type: application/json
+
+{
+  "name": "Diva Shakira",
+  "email": "23shakiri@gmail.com",
+  "address": "123 Main St, Springfield, USA",
+    "contact": "123-456-7890"}
+
+### Delete a contact by ID
+DELETE http://localhost:3000/user/682f3ec94b29160ce4eb0368
